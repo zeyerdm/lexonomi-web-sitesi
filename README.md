@@ -27,8 +27,14 @@ Hukukçular, mali müşavirler ve bilirkişiler için geliştirilen **Lexonomi**
 ├── index.html          # Ana sayfa
 ├── styles.css          # Tasarım sistemi, responsive düzen ve açık/koyu tema
 ├── app.js              # Modül sekmeleri, hesaplayıcılar, filtreleme ve kaydırma etkileşimleri
-├── hero-media.js       # Hero video/poster ve uygulama giriş/kayıt bağlantıları
+├── hero-media.js       # Hero video/poster, sosyal medya ve uygulama giriş/kayıt bağlantıları
+├── moduller/           # Dört modül detay ve canlı önizleme sayfası
+├── neden/              # Neden Lexonomi ve 7 temel ilke sayfası
+├── panel/              # Canlı hesaplayıcılar ve hesap paneli sayfası
+├── paketler/           # Aylık/yıllık paketler ve kullanım koşulları sayfası
 ├── blog/               # Blog dizini ve makale sayfaları
+├── sss/                # Sık sorulan sorular ve yasal sözleşmeler sayfası
+├── iletisim/           # Kurumsal iletişim ve sosyal medya sayfası
 ├── video/              # Tanıtım videosu sayfası
 ├── assets/             # Video, poster, meslek ve kapak görselleri, ikonlar
 ├── robots.txt
