@@ -2633,7 +2633,8 @@ input[type="range"] {
 
 /* İki tonlu başlık (logo rengi) */
 h1 .tone,
-h2 .tone {
+h2 .tone,
+.page-hero h1 .tone {
   color: var(--teal);
 }
 
