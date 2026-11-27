@@ -31,26 +31,12 @@
     a.href = a.dataset.selectPlan ? `${u}${u.includes('?') ? '&' : '?'}paket=${a.dataset.selectPlan}` : u;
   });
 
-  /* Sosyal medya bağlantıları & İletişim formu */
+  /* Sosyal medya bağlantıları */
   const social = window.LEXONOMI_SOCIAL || {};
   $$('[data-social]').forEach(a => {
     const u = social[a.dataset.social];
     if (u) a.href = u;
   });
-
-  const cForm = $('#contactForm');
-  if (cForm) {
-    cForm.addEventListener('submit', e => {
-      e.preventDefault();
-      const name = ($('#cName').value || '').trim();
-      const email = ($('#cEmail').value || '').trim();
-      const subj = ($('#cSubject').value || 'İletişim').trim();
-      const msg = ($('#cMsg').value || '').trim();
-      const body = `Ad Soyad: ${name}\nE-posta: ${email}\n\n${msg}`;
-      window.location.href = `mailto:info@lexonomi.com?subject=${encodeURIComponent('[Lexonomi] ' + subj)}&body=${encodeURIComponent(body)}`;
-      toast('E-posta uygulamanız açılıyor.');
-    });
-  }
 
   /* Logoya tıklanınca ana sayfa başına kasmadan anında dön */
   $$('a.brand').forEach(b => b.addEventListener('click', e => {
