@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Yerel Sunucularda Yapay Zekâ ve Veri İşleme: KVKK ve Sır Saklama Yükümlülüğü — Lexonomi Blog</title>
+  <meta name="description" content="Yerel sunucularda çalışan yapay zekâ modelleri ile bulut tabanlı hizmetlerin KVKK m.9 yurt dışına veri aktarımı ve Avukatlık Kanunu m.36 sır saklama yükümlülüğü açısından karşılaştırılması." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lexonomi.com/blog/yerel-sunucularda-yapay-zeka-ve-kvkk.html" />
+  <meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0D1418" media="(prefers-color-scheme: dark)" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Yerel Sunucularda Yapay Zekâ ve Veri İşleme: KVKK ve Sır Saklama Yükümlülüğü" />
+  <meta property="og:description" content="Dr. Ömer Faruk BAYRAKCI — Yerel sunucularda yapay zekâ ile veri işleme, KVKK m.9 ve Avukatlık Kanunu m.36 değerlendirmesi." />
+  <meta property="og:url" content="https://lexonomi.com/blog/yerel-sunucularda-yapay-zeka-ve-kvkk.html" />
+  <meta property="og:image" content="https://lexonomi.com/assets/opengraph-image.png" />
+  <meta property="article:published_time" content="2026-11-27" />
+  <meta property="article:author" content="Dr. Ömer Faruk BAYRAKCI" />
+  <meta property="article:section" content="Veri Güvenliği & KVKK" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="../assets/favicon.ico" sizes="48x48" type="image/x-icon" />
+  <link rel="icon" href="../assets/icon.svg" sizes="any" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Yerel Sunucularda Yapay Zekâ ve Veri İşleme: KVKK ve Sır Saklama Yükümlülüğü",
+        "datePublished": "2026-11-27",
+        "dateModified": "2026-11-27",
+        "author": { "@type": "Person", "name": "Dr. Ömer Faruk BAYRAKCI" },
+        "publisher": { "@type": "Organization", "name": "Lexonomi" },
+        "mainEntityOfPage": "https://lexonomi.com/blog/yerel-sunucularda-yapay-zeka-ve-kvkk.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://lexonomi.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lexonomi.com/blog/" },
+          { "@type": "ListItem", "position": 3, "name": "Yerel Sunucularda Yapay Zekâ ve KVKK", "item": "https://lexonomi.com/blog/yerel-sunucularda-yapay-zeka-ve-kvkk.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="Lexonomi Ana Sayfa">
+        <svg class="brand-logo" viewBox="218 122 200 166" fill="none" aria-hidden="true">
+          <circle cx="238" cy="249" r="13" fill="currentColor"></circle>
+          <circle cx="398" cy="250" r="13" fill="currentColor"></circle>
+          <path d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257" stroke="currentColor" stroke-width="13" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-word">LEXONOMI</span>
+      </a>
+      <nav class="nav" aria-label="Ana menü">
+        <a href="../index.html#moduller">Modüller</a>
+        <a href="../index.html#neden">Neden Lexonomi</a>
+        <a href="../index.html#panel">Panel</a>
+        <a href="../index.html#fiyatlar">Paketler</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../index.html#sss">SSS</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://app.lexonomi.com/" class="nav-login hide-sm" data-app-link="giris">Giriş Yap</a>
+        <a href="https://app.lexonomi.com/" class="btn btn-primary btn-sm hide-sm" data-app-link="kayit">Hesap Oluştur</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <nav>
+        <a href="../index.html#moduller">Modüller</a>
+        <a href="../index.html#neden">Neden Lexonomi</a>
+        <a href="../index.html#panel">Hesap Paneli</a>
+        <a href="../index.html#guvenlik">Gizlilik</a>
+        <a href="../index.html#fiyatlar">Paketler</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../index.html#sss">SSS</a>
+        <a href="../index.html#iletisim">İletişim</a>
+      </nav>
+      <div class="mobile-cta">
+        <a href="https://app.lexonomi.com/" class="btn btn-ghost btn-block" data-app-link="giris">Giriş Yap</a>
+        <a href="https://app.lexonomi.com/" class="btn btn-primary btn-block" data-app-link="kayit">Hesap Oluştur</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero has-cover">
+      <img class="page-hero-bg" src="../assets/blog-kvkk-cover.jpg" alt="" aria-hidden="true" />
+      <div class="container">
+        <nav class="breadcrumb" aria-label="İçerik yolu">
+          <a href="../index.html">Ana Sayfa</a><span>/</span><a href="index.html">Blog</a><span>/</span><span aria-current="page">Veri Güvenliği &amp; KVKK</span>
+        </nav>
+        <h1>Yerel Sunucularda Yapay Zekâ ve Veri İşleme: KVKK ve Sır Saklama Yükümlülüğü</h1>
+        <div class="article-meta-bar">
+          <span>Dr. Ömer Faruk BAYRAKCI</span>
+          <time datetime="2026-11-27">27 Kasım 2026</time>
+          <span>Veri Güvenliği &amp; KVKK</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container article-layout">
+        <article class="article-body">
+          <h2 id="giris">1. Giriş</h2>
+          <p>Yapay zekâ uygulamaları, son yıllarda hukuk bürolarından sağlık kuruluşlarına, muhasebe ve insan kaynakları birimlerine kadar geniş bir kurumsal yelpazede kullanılmaya başlanmıştır. Sözleşme incelemesi, dilekçe taslağı hazırlanması ve hacimli dosyaların özetlenmesi gibi zaman alan işlemler, büyük dil modelleri (Large Language Models, LLM) aracılığıyla kısa sürede tamamlanabilir hâle gelmiştir. Ne var ki bu verimlilik artışı, uygulamada çoğu zaman göz ardı edilen temel bir soruyu gündeme getirmektedir: Yapay zekâ sistemlerine aktarılan belgeler ve bu belgelerde yer alan kişisel veriler nerede ve kim tarafından işlenmektedir?</p>
+
+          <h2 id="kavramsal-cerceve">2. Kavramsal Çerçeve: Yerel Sunucularda Veri İşleme</h2>
+          <p>Yerel sunucularda veri işleme, açık kaynak bir büyük dil modelinin kurumun doğrudan denetimi altındaki sunuculara kurulması ve veri işleme ile çıkarım (inference) faaliyetlerinin tamamının bu sunucular üzerinde gerçekleştirilmesi olarak tanımlanabilir. Söz konusu sunucular, kurumun kendi tesislerinde veya yurt içindeki özel bir veri merkezinde konumlanabilir.</p>
+          <p>Bu modelin belirleyici özelliği, işleme konu verinin kurumun bilgi işlem altyapısı dışına çıkmamasıdır. Kullanıcı tarafından iletilen sorgu, analiz edilen belge ve modelin ürettiği çıktı, sürecin her aşamasında kurumun kontrolündeki ortamda kalır.</p>
+          <p>Yaklaşımın teknik yapısı üç temel bileşenden oluşmaktadır:</p>
+          <ul>
+            <li><strong>Açık kaynak model:</strong> Model ağırlıkları kamuya açık olan ve kurumun kendi donanımı üzerinde çalıştırılabilen modellerdir (örneğin Llama, Mistral, Qwen veya Gemma model aileleri).</li>
+            <li><strong>Yerel donanım:</strong> Modelin çalıştırılması için gerekli işlem gücünü sağlayan, çoğunlukla grafik işlem birimi (GPU) ile donatılmış sunuculardır.</li>
+            <li><strong>Çıkarım yazılımı ve uygulama katmanı:</strong> Modeli kullanıma sunan servis yazılımı ile kullanıcıların belge yükleyerek sorgu yönelttikleri arayüzden ibarettir.</li>
+          </ul>
+          <p>Çıkarım kavramı, eğitimi tamamlanmış bir modelin kendisine sunulan yeni bir girdiye (örneğin bir sözleşme metnine) karşılık çıktı üretmesi sürecini ifade eder. Yapay zekâ sistemleriyle gerçekleştirilen günlük işlemlerin büyük çoğunluğu esasen birer çıkarım işlemidir. Bu işlem, bulut tabanlı hizmetlerde sağlayıcının sunucularında, yerel kurulumlarda ise kurumun kendi sunucularında gerçekleşir.</p>
+
+          <h2 id="bulut-hizmetleri">3. Bulut Tabanlı Yapay Zekâ Hizmetlerinde Verinin İşlenmesi</h2>
+          <p>Google (Gemini), AWS (Bedrock), OpenAI (ChatGPT) ve Anthropic (Claude) gibi sağlayıcıların sunduğu yapay zekâ hizmetlerinde model, kullanıcının cihazında değil, sağlayıcının sunucularında çalışmaktadır. Bu mimari, modelin bir belgeyi işleyebilmesi için belge içeriğinin, içerdiği kişisel verilerle birlikte sağlayıcının sunucularına iletilmesini zorunlu kılmaktadır. Söz konusu zorunluluk, tercihe bağlı bir uygulamadan değil, teknolojinin işleyiş biçiminden kaynaklanmaktadır.</p>
+          <p>Büyük ölçekli sağlayıcıların önemli bir kısmı, kurumsal ve API müşterilerine; verilerin model eğitiminde kullanılmaması, saklama sürelerinin sınırlandırılması, şifreleme ve veri işleme sözleşmeleri gibi çeşitli güvenceler sunmaktadır. Bu güvencelerin önemi yadsınamaz. Bununla birlikte, söz konusu güvencelerin tamamı sözleşmesel ve teknik taahhüt niteliğindedir ve aşağıdaki olguları ortadan kaldırmamaktadır:</p>
+          <ul>
+            <li>Veri, işlendiği andan itibaren üçüncü bir kuruluşun altyapısında bulunmakta ve bu kuruluş hukuken veri işleyen sıfatını taşımaktadır.</li>
+            <li>Sunucuların önemli bir kısmı yurt dışında bulunduğundan, işlem KVKK kapsamında yurt dışına veri aktarımı niteliği kazanmaktadır.</li>
+            <li>Verinin hangi ülkede ve ne kadar süreyle muhafaza edildiği ile hangi yabancı mevzuatın (örneğin kamu makamlarının veri taleplerine ilişkin düzenlemelerin) kapsamına girdiği, veri sorumlusunun değil sağlayıcının politikalarına bağlıdır ve bu politikalar zaman içinde değişime uğrayabilir.</li>
+          </ul>
+          <p>Yerel kurulum modelinde ise yukarıda sayılan aktarım zinciri bütünüyle ortadan kalkmaktadır; zira veri, modele ulaşmak için kurumun ağını terk etmemektedir.</p>
+
+          <h2 id="kvkk-degerlendirme">4. Kişisel Verilerin Korunması Hukuku Bakımından Değerlendirme</h2>
+          <p>Yurt dışında konumlanan bir sunucu üzerinde çalışan yapay zekâ hizmetine kişisel veri içeren bir belgenin iletilmesi, KVKK'nın 9. maddesi anlamında bir yurt dışına aktarım teşkil etmektedir.</p>
+          <p>Bu alanda 2024 yılında kapsamlı değişiklikler gerçekleştirilmiştir:</p>
+          <ul>
+            <li>7499 sayılı Kanun ile KVKK'nın 9. maddesi yeniden düzenlenmiş; uygulamaya ilişkin usul ve esaslar, 10.07.2024 tarihli ve 32598 sayılı Resmî Gazete'de yayımlanan Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik ile belirlenmiştir.</li>
+            <li>Önceki düzenleme uyarınca açık rızaya dayalı olarak gerçekleştirilen aktarımlar 1 Eylül 2024 tarihine kadar geçerli kabul edilmiştir. Bu tarihten itibaren aktarımların yeterlilik kararı, uygun güvenceler (başta standart sözleşmeler olmak üzere) veya arızi haller gibi kanunda öngörülen mekanizmalardan birine dayandırılması gerekmektedir.</li>
+            <li>Kişisel Verileri Koruma Kurulu'nun 04.06.2024 tarihli ve 2024/959 sayılı kararıyla dört tip standart sözleşme metni yayımlanmıştır. Bu metinler üzerinde değişiklik yapılması mümkün olmayıp imzalanmalarının ardından Kurum'a bildirilmeleri zorunludur.</li>
+          </ul>
+          <p>Bu çerçevede, bulut tabanlı bir yapay zekâ hizmetini kişisel verilerle kullanan veri sorumlusu; sağlayıcı ile standart sözleşme akdetmek, sözleşmeyi süresi içinde Kurum'a bildirmek, aydınlatma metinlerini güncellemek ve aktarımın hukuki dayanağını belgelemek gibi bir dizi yükümlülükle karşı karşıya kalmaktadır. Verinin yurt dışına hiç aktarılmadığı durumlarda ise bu yükümlülüklerin önemli bir kısmı baştan doğmamaktadır.</p>
+
+          <h3 id="sir-saklama">4.1. Hukuk Mesleği Bakımından Sır Saklama Yükümlülüğü</h3>
+          <p>Avukatlık mesleği bakımından mesele yalnızca kişisel verilerin korunması hukukuyla sınırlı değildir. 1136 sayılı Avukatlık Kanunu'nun 36. maddesinde düzenlenen sır saklama yükümlülüğü, müvekkillere ait bilgilerin üçüncü kişilere ait altyapılara iletilmesi hususunda ayrıca özen gösterilmesini gerektirmektedir. Dava dosyaları, özel nitelikli kişisel veriler ve ticari sır niteliği taşıyan sözleşmeler, yerel veri işlemenin en belirgin fayda sağladığı belge türleri arasında yer almaktadır.</p>
+
+          <h2 id="avantajlar">5. Yerel Veri İşlemenin Sağladığı Avantajlar</h2>
+          <p>Yerel sunucularda veri işleme yaklaşımının başlıca avantajları aşağıdaki şekilde sıralanabilir:</p>
+          <ul>
+            <li><strong>Veri güvenliği:</strong> Verinin hangi ortamda muhafaza edileceği, kimlerin erişim yetkisine sahip olacağı ve ne zaman imha edileceği hususları münhasıran şirketin takdirindedir.</li>
+            <li><strong>KVKK'ya uyumun kolaylaşması:</strong> Yurt dışına aktarım ve üçüncü taraf veri işleyen ilişkisinden kaynaklanan yükümlülükler büyük ölçüde ortadan kalkmaktadır.</li>
+            <li><strong>Gizlilik ve sır saklama:</strong> Müvekkil veya müşteri bilgileri yurtdışına çıkmamakta; bu sayede meslek sırrına ilişkin riskler azalmaktadır.</li>
+            <li><strong>İnternet bağlantısından bağımsızlık:</strong> Sistem, dış ağlara kapalı ortamlarda dahi işlevini sürdürebilmektedir.</li>
+          </ul>
+
+          <h2 id="sonuc">6. Sonuç</h2>
+          <p>Yapay zekâ teknolojilerinden yararlanma ile verinin denetimini muhafaza etme, birbirini dışlayan tercihler olarak değerlendirilmemelidir. Bulut tabanlı hizmetler hızlı kurulum ve yüksek performanslı modellere erişim imkânı sunmakla birlikte, verinin yurt dışıyla paylaşılmasını zorunlu kılmaktadır. Yerel sunucularda çalışan açık kaynak modeller ise veriyi kurumun sınırları içinde tutarak yapay zekânın sağladığı verimliliği gizlilikten taviz verilmeksizin elde etmeyi mümkün kılmaktadır.</p>
+          <p>Uygun modelin belirlenmesi; işlenen verinin hassasiyet derecesine, işlem hacmine ve kurumun teknik kapasitesine bağlıdır. Bununla birlikte, özel nitelikli kişisel veri ve meslek sırrı kapsamında bilgi işleyen kurumlar bakımından yerel veri işlemenin bir tercih olmaktan çıkarak giderek bir gereklilik hâline geldiği ileri sürülebilir.</p>
+
+          <h2 id="kaynaklar">Kaynaklar</h2>
+          <ul>
+            <li><a href="https://www.kvkk.gov.tr/Icerik/2053/Yurtdisina-Aktarim" target="_blank" rel="noopener noreferrer">KVKK – Yurt Dışına Aktarım</a></li>
+            <li><a href="https://www.kvkk.gov.tr/Icerik/7938/Standart-Sozlesmeler-ve-Baglayici-Sirket-Kurallarina-Iliskin-Dokumanlar-Hakkinda-Kamuoyu-Duyurusu" target="_blank" rel="noopener noreferrer">KVKK – Standart Sözleşmeler ve Bağlayıcı Şirket Kurallarına İlişkin Dokümanlar Hakkında Kamuoyu Duyurusu</a></li>
+            <li><a href="https://www.kvkk.gov.tr/Icerik/8170/Yurt-Disina-Kisisel-Veri-Aktariminda-Kullanilacak-Standart-Sozlesmelerde-Dikkat-Edilmesi-Gereken-Hususlara-Iliskin-Kamuoyu-Duyurusu" target="_blank" rel="noopener noreferrer">KVKK – Standart Sözleşmelerde Dikkat Edilmesi Gereken Hususlar (5 Şubat 2025)</a></li>
+          </ul>
+        </article>
+
+        <aside class="article-toc">
+          <b>İçindekiler</b>
+          <nav>
+            <a href="#giris">1. Giriş</a>
+            <a href="#kavramsal-cerceve">2. Yerel Sunucularda Veri İşleme</a>
+            <a href="#bulut-hizmetleri">3. Bulut Tabanlı Hizmetler</a>
+            <a href="#kvkk-degerlendirme">4. KVKK Bakımından Değerlendirme</a>
+            <a href="#sir-saklama">4.1. Sır Saklama Yükümlülüğü</a>
+            <a href="#avantajlar">5. Sağlanan Avantajlar</a>
+            <a href="#sonuc">6. Sonuç</a>
+            <a href="#kaynaklar">Kaynaklar</a>
+          </nav>
+          <div class="toc-cta">
+            <p>Verileriniz yalnızca yerel sunucularımızda işlenir.</p>
+            <a href="../index.html#guvenlik" class="btn btn-primary btn-block btn-sm">Güvenlik İlkelerimiz</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="iletisim">
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="brand">
+          <svg class="brand-logo" viewBox="218 122 200 166" fill="none" aria-hidden="true">
+            <circle cx="238" cy="249" r="13" fill="currentColor"></circle>
+            <circle cx="398" cy="250" r="13" fill="currentColor"></circle>
+            <path d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257" stroke="currentColor" stroke-width="13" stroke-linecap="round"></path>
+          </svg>
+          <span class="brand-word">LEXONOMI</span>
+        </a>
+        <p class="muted">Hukuki araştırmada yeni bir standart.</p>
+        <p class="muted">© <span id="year"></span> İnter Mundos Yazılım ve Teknoloji A.Ş.</p>
+      </div>
+      <address class="footer-contact">
+        <p>Pamukkale Teknoloji Geliştirme Bölgesi, Kınıklı Mah. Hüseyin Yılmaz Cad. No: 67 İç Kapı No: 2, Pamukkale / Denizli</p>
+        <p>Tel: <a href="tel:+908508403243">0850 840 32 43</a> · <a href="mailto:info@lexonomi.com">info@lexonomi.com</a> · KEP: <a href="mailto:inter.mundos@hs01.kep.tr">inter.mundos@hs01.kep.tr</a> · MERSİS: 0478123270700001</p>
+      </address>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="../hero-media.js" defer></script>
+  <script src="../app.js" defer></script>
+</body>
+</html>

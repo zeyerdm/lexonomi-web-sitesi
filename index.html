@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Lexonomi — Hukuk Kaynakları Analitiği Platformu</title>
+  <meta name="description"
+    content="11 milyonu aşkın karar; 8 yargı, 14 idari, 9 mevzuat ve 5 uluslararası kaynakta künye arama, kaynak arama, kaynak gösteren hukuki araştırma ve belge geliştirme." />
+  <link rel="canonical" href="https://app.lexonomi.com/" />
+  <meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0D1418" media="(prefers-color-scheme: dark)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lexonomi — Aradığınız karar, gerekçesiyle elinizde." />
+  <meta property="og:description"
+    content="36 hukuk kaynağı, 11 milyon+ karar, kaynak gösteren araştırma ve belge geliştirme." />
+  <meta property="og:image" content="https://lexonomi.com/assets/opengraph-image.png" />
+  <link rel="icon" href="assets/favicon.ico" sizes="48x48" type="image/x-icon" />
+  <link rel="icon" href="assets/icon.svg" sizes="any" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <noscript>
+    <style>
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important
+      }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Lexonomi — İnter Mundos Yazılım ve Teknoloji A.Ş.",
+        "url": "https://lexonomi.com/",
+        "email": "info@lexonomi.com",
+        "telephone": "+90-850-840-32-43",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pamukkale Teknoloji Geliştirme Bölgesi, Kınıklı Mah. Hüseyin Yılmaz Cad. No: 67 İç Kapı No: 2",
+          "addressLocality": "Pamukkale",
+          "addressRegion": "Denizli",
+          "addressCountry": "TR"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Lexonomi",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://lexonomi.com/"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- SADE ÜST MENÜ (OTOMATİK TEMA — MANUEL TEMA DÜĞMESİ YOK) -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Lexonomi">
+        <svg class="brand-logo" viewBox="218 122 200 166" fill="none" aria-hidden="true">
+          <circle cx="238" cy="249" r="13" fill="currentColor"></circle>
+          <circle cx="398" cy="250" r="13" fill="currentColor"></circle>
+          <path
+            d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257"
+            stroke="currentColor" stroke-width="13" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-word">LEXONOMI</span>
+      </a>
+
+      <nav class="nav" aria-label="Ana menü">
+        <a href="#moduller">Modüller</a>
+        <a href="#neden">Neden Lexonomi</a>
+        <a href="#panel">Panel</a>
+        <a href="#fiyatlar">Paketler</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#sss">SSS</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://app.lexonomi.com/" class="nav-login hide-sm" data-app-link="giris">Giriş Yap</a>
+        <a href="https://app.lexonomi.com/" class="btn btn-primary btn-sm hide-sm" data-app-link="kayit">Hesap Oluştur</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <nav>
+        <a href="#moduller">Modüller</a>
+        <a href="#neden">Neden Lexonomi</a>
+        <a href="#panel">Hesap Paneli</a>
+        <a href="#guvenlik">Güven</a>
+        <a href="#fiyatlar">Paketler</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#sss">SSS</a>
+        <a href="#sozlesmeler">Sözleşmeler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <div class="mobile-cta">
+        <a href="https://app.lexonomi.com/" class="btn btn-ghost btn-block" data-app-link="giris">Giriş Yap</a>
+        <a href="https://app.lexonomi.com/" class="btn btn-primary btn-block" data-app-link="kayit">Hesap Oluştur</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. SİNEMATİK VİDEO GİRİŞ — KAYDIRDIKÇA ÇERÇEVEYE OTURUR -->
+    <section class="hero-cine" id="ust" aria-label="Lexonomi açılış">
+      <div class="hero-cine-sticky">
+        <div class="hero-cine-media">
+          <video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="auto"
+            poster="assets/hero-poster.jpg"></video>
+          <div class="hero-calm" aria-hidden="true"></div>
+          <div class="hero-scrim" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-cine-copy">
+          <h1 id="heroSlogan" class="hero-title">Hukuki araştırmada yeni bir yaklaşım.</h1>
+          <p class="hero-sub">Aradığınız kararı, gerekçesiyle birlikte bulun. 11 milyonu aşkın karar, 36 hukuk kaynağı.</p>
+          <div class="hero-cta">
+            <a href="https://app.lexonomi.com/" class="hero-pill" data-app-link="kayit">30 gün ücretsiz deneyin <span aria-hidden="true">→</span></a>
+            <a href="#katmanlar" class="hero-link">Platformu keşfedin</a>
+          </div>
+        </div>
+
+        <p class="hero-cine-second" aria-hidden="true">Her sonuç, veri tabanımızdaki<br><em>gerçek bir karardır.</em></p>
+
+        <div class="hero-cine-foot">
+          <span class="scroll-cue" aria-hidden="true"><i></i>Kaydırın</span>
+          <span class="hero-sample-note" id="heroSampleNote"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. KAPSAM — LEGORA TARZI EDİTORYAL SAYI DÜZENİ (GERÇEK LEXONOMI VERİLERİ) -->
+    <section class="section" id="kapsam">
+      <div class="container editorial-metrics reveal">
+        <div class="em-intro">
+          <p class="eyebrow">Veri Kapsamı</p>
+          <p class="em-statement">Hukukçulara, mali müşavirlere ve bilirkişilere uygun tek araştırma düzeni. Her sonuç
+            veri tabanımızdaki gerçek bir karardır.</p>
+        </div>
+
+        <div class="em-list">
+          <div class="em-row">
+            <strong>11M+</strong>
+            <div class="em-detail"><b>Gerçek Karar</b><p>Künyesiyle bulunur, ilgili pasajı işaretli olarak tam metniyle açılır.</p></div>
+          </div>
+          <div class="em-row">
+            <strong>8</strong>
+            <div class="em-detail"><b>Yargı Kaynağı</b><p>Yargıtay, Danıştay, AYM, Uyuşmazlık, BAM, BİM, İlk Derece ve Sayıştay.</p></div>
+          </div>
+          <div class="em-row">
+            <strong>14</strong>
+            <div class="em-detail"><b>İdari Kaynak</b><p>Kamu İhale Kurulu, Rekabet Kurumu, KVKK, RTÜK, KDK ve diğerleri.</p></div>
+          </div>
+          <div class="em-row">
+            <strong>9</strong>
+            <div class="em-detail"><b>Mevzuat Türü</b><p>Kanunlar, yönetmelikler, tebliğler ve Cumhurbaşkanlığı kararnameleri.</p></div>
+          </div>
+          <div class="em-row">
+            <strong>5</strong>
+            <div class="em-detail"><b>Uluslararası Kaynak</b><p>AİHM, antlaşmalar; Almanya, Fransa ve İsviçre yüksek mahkemeleri.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.2. KAYNAK AKIŞ ŞEMASI — 36 KAYNAK TEK MERKEZDE (çizgiler app.js ile çizilir) -->
+    <section class="section section-soft" id="kaynaklar" aria-label="36 hukuk kaynağı">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="eyebrow">36 Kaynak, Tek Arama</p>
+          <h2>Bütün kaynaklar <span class="tone">tek masada.</span></h2>
+        </header>
+
+        <div class="flow" id="flow">
+          <svg class="flow-lines" aria-hidden="true"></svg>
+
+          <div class="flow-col flow-src">
+            <div class="flow-card" data-flow="src">
+              <b>8 Yargı</b>
+              <p>Yargıtay · Danıştay · AYM · Uyuşmazlık · BAM · BİM · İlk Derece · Sayıştay</p>
+            </div>
+            <div class="flow-card" data-flow="src">
+              <b>14 İdari</b>
+              <p>Kamu İhale Kurulu · Rekabet · KVKK · RTÜK · KDK · ve diğerleri</p>
+            </div>
+            <div class="flow-card" data-flow="src">
+              <b>9 Mevzuat</b>
+              <p>Kanun · Yönetmelik · Tebliğ · CB Kararnamesi · ve diğerleri</p>
+            </div>
+            <div class="flow-card" data-flow="src">
+              <b>5 Uluslararası</b>
+              <p>AİHM · Antlaşmalar · Almanya · Fransa · İsviçre</p>
+            </div>
+          </div>
+
+          <div class="flow-hub" data-flow="hub">
+            <svg viewBox="218 122 200 166" fill="none" aria-hidden="true">
+              <circle cx="238" cy="249" r="13" fill="currentColor"></circle>
+              <circle cx="398" cy="250" r="13" fill="currentColor"></circle>
+              <path d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257"
+                stroke="currentColor" stroke-width="13" stroke-linecap="round"></path>
+            </svg>
+            <span>LEXONOMI</span>
+            <small>11M+ karar</small>
+          </div>
+
+          <div class="flow-col flow-out">
+            <a class="flow-card flow-mod" data-flow="out" href="#moduller" data-goto-mod="kunye"><b>Künye Arama</b><p>Bildiğiniz kararı doğrudan açın</p></a>
+            <a class="flow-card flow-mod" data-flow="out" href="#moduller" data-goto-mod="kaynak"><b>Kaynak Arama</b><p>Sorunuzu cümleyle yazın</p></a>
+            <a class="flow-card flow-mod" data-flow="out" href="#moduller" data-goto-mod="arastirma"><b>Hukuki Araştırma</b><p>Kaynak gösteren rapor</p></a>
+            <a class="flow-card flow-mod" data-flow="out" href="#moduller" data-goto-mod="belge"><b>Belge Geliştirme</b><p>Üret, iyileştir, dönüştür</p></a>
+          </div>
+        </div>
+
+        <div class="trio reveal">
+          <div>
+            <b>Tek aramada hepsi</b>
+            <p>Yargı, idari, mevzuat ve uluslararası kaynakları ayrı ayrı gezmeden aynı anda tarayın.</p>
+          </div>
+          <div>
+            <b>Her sonuç gerçek karar</b>
+            <p>Sonuç künyesiyle listelenir, tam metniyle ve ilgili pasajı işaretli açılır.</p>
+          </div>
+          <div>
+            <b>Değişen hüküm uyarısı</b>
+            <p>Karardan sonra değişen kanun maddesi raporda ayrıca gösterilir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5. KAYDIRDIKÇA ÜST ÜSTE OTURAN KATMANLAR (STICKY 3D YIĞIN) -->
+    <section class="stack-sec" id="katmanlar" aria-label="Platform mimarisi">
+      <div class="stack-sticky">
+        <header class="stack-head">
+          <p class="eyebrow">Platform Mimarisi</p>
+          <h2>Kaynaktan belgeye, <span class="tone">katman katman.</span></h2>
+        </header>
+
+        <div class="stack-progress" aria-hidden="true">
+          <span class="stack-progress-bar"></span>
+          <ol>
+            <li data-step="0">Veri</li>
+            <li data-step="1">Keşif</li>
+            <li data-step="2">Analiz</li>
+            <li data-step="3">Üretim</li>
+          </ol>
+        </div>
+
+        <div class="stack-scene" aria-hidden="true">
+          <div class="stack-world">
+            <div class="plate" data-plate="0"><b>36 Hukuk Kaynağı</b><small>11M+ karar</small></div>
+            <div class="plate" data-plate="1"><b>Künye &amp; Kaynak</b><small>Erişim ve keşif</small></div>
+            <div class="plate" data-plate="2"><b>Hukuki Araştırma</b><small>Atıflı analiz</small></div>
+            <div class="plate plate-top" data-plate="3">
+              <div class="plate-tiles">
+                <i>Künye Arama</i><i>Kaynak Arama</i><i>Hukuki Araştırma</i>
+                <i>Belge Geliştirme</i><i>AAÜT Hesabı</i><i>Süre Hesabı</i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-captions" aria-live="polite">
+          <article class="stack-cap is-active" data-cap="0">
+            <span>01 · Veri Kapsamı</span>
+            <p><b>36 hukuk kaynağı.</b> 8 yargı, 14 idari kurul, 9 mevzuat türü ve 5 uluslararası kaynaktan 11 milyonu aşkın karar tek aramada taranır.</p>
+          </article>
+          <article class="stack-cap" data-cap="1">
+            <span>02 · Erişim &amp; Keşif</span>
+            <p><b>Künye Arama ve Kaynak Arama.</b> Künyesini bildiğiniz kararı doğrudan açın ya da sorunuzu cümleyle yazın; kararlar anlamına göre bulunur ve ilgili pasaj işaretli açılır.</p>
+          </article>
+          <article class="stack-cap" data-cap="2">
+            <span>03 · Analiz</span>
+            <p><b>Hukuki Araştırma.</b> Sorunuzla ilgili kararlar taranır ve kaynak gösteren bir rapor yazılır; kararlardan sonra değişen kanun maddeleri ayrıca uyarılır.</p>
+          </article>
+          <article class="stack-cap" data-cap="3">
+            <span>04 · Üretim &amp; Hesap</span>
+            <p><b>Belge Geliştirme ve Hesap Paneli.</b> Atıflı taslak üretin, DOCX / PDF / UDF indirin; AAÜT ve süreleri aynı panelde hesaplayın.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.7. LEXONOMI OLMADAN / LEXONOMI İLE — KAYDIRDIKÇA DÖNÜŞEN SAYILAR
+         ÖNEMLİ: data-sample="1" olan satırlar ÖRNEK değerdir. Kullanıcı anketi sonuçları gelince
+         data-from / data-to değerlerini güncelleyip data-sample özniteliğini silin (yıldız ve dipnot kendiliğinden kalkar). -->
+    <section class="section" id="fark" aria-label="Lexonomi ile fark">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="eyebrow">Fark</p>
+          <h2>Aynı iş, <span class="tone">çok daha kısa sürede.</span></h2>
+        </header>
+
+        <div class="fark-list">
+          <div class="fark-row" data-fark data-from="25" data-to="2" data-unit="dk" data-sample="1">
+            <div class="fark-num"><span class="fark-val">25</span><small class="fark-unit">dk</small></div>
+            <div class="fark-copy">
+              <span class="fark-state"><i class="off">Lexonomi olmadan</i><i class="on">Lexonomi ile</i></span>
+              <p>Aradığınız kararı bulup ilgili pasaja ulaşma süresi</p>
+            </div>
+          </div>
+          <div class="fark-row" data-fark data-from="1" data-to="36" data-unit="kaynak">
+            <div class="fark-num"><span class="fark-val">1</span><small class="fark-unit">kaynak</small></div>
+            <div class="fark-copy">
+              <span class="fark-state"><i class="off">Lexonomi olmadan</i><i class="on">Lexonomi ile</i></span>
+              <p>Tek aramada taranan hukuk kaynağı</p>
+            </div>
+          </div>
+          <div class="fark-row" data-fark data-from="10" data-to="3" data-unit="saat" data-sample="1">
+            <div class="fark-num"><span class="fark-val">10</span><small class="fark-unit">saat</small></div>
+            <div class="fark-copy">
+              <span class="fark-state"><i class="off">Lexonomi olmadan</i><i class="on">Lexonomi ile</i></span>
+              <p>Haftalık içtihat araştırmasına ayrılan süre</p>
+            </div>
+          </div>
+        </div>
+        <p class="fark-note" id="farkNote">* Örnek değerdir; kullanıcı anketi sonuçlarıyla güncellenecektir.</p>
+      </div>
+    </section>
+
+    <!-- 3. DÖRT MODÜL — SADELEŞTİRİLMİŞ, 20 SANİYEDE ANLAŞILIR -->
+    <section class="section" id="moduller">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="eyebrow">Dört Modül, Tek Masa</p>
+          <h2>İhtiyacınız olan araç, <span class="tone">tam yerinde.</span></h2>
+          <div class="mod-tabs" role="tablist" aria-label="Modüller">
+            <button type="button" role="tab" aria-selected="true" class="is-on" data-mod="kunye">Künye Arama</button>
+            <button type="button" role="tab" aria-selected="false" data-mod="kaynak">Kaynak Arama</button>
+            <button type="button" role="tab" aria-selected="false" data-mod="arastirma">Hukuki Araştırma</button>
+            <button type="button" role="tab" aria-selected="false" data-mod="belge">Belge Geliştirme</button>
+          </div>
+        </header>
+
+        <!-- MODÜL 1: KÜNYE ARAMA -->
+        <div class="mod-view" data-mod-pane="kunye">
+          <div class="mod-copy">
+            <h3>Künye Arama</h3>
+            <p class="mod-lead">Daireyi, esas ve karar numarasını yazın; karar tam metniyle okuma alanında açılır.</p>
+            <ul class="clean-list">
+              <li>8 yargı kaynağında: AYM ve Sayıştay dahil</li>
+              <li>Daire, esas ve karar numarası, karar tarihiyle arama</li>
+              <li>Atıf sekmesi: kararın atıf yaptığı kararlar, kanun maddeleri ve ona atıf yapan kararlar</li>
+              <li>Kopyalanan parça künyesiyle gelir; kararı PDF olarak indirme</li>
+            </ul>
+          </div>
+          <div class="mod-canvas">
+            <div class="canvas-bar">
+              <span>Yargıtay Hukuk Genel Kurulu · E.2023/43 K.2024/68</span>
+              <div class="canvas-tools">
+                <button type="button" class="copy-btn"
+                  data-copy="Yargıtay HGK, E.2023/43 K.2024/68, T.31.01.2024">Kopyala</button>
+                <button type="button" class="copy-btn" data-toast-msg="Karar PDF olarak hazırlandı.">PDF</button>
+              </div>
+            </div>
+            <div class="canvas-body">
+              <p class="canvas-meta">T. 31.01.2024 · Atıf: 6100 s. HMK m.297, m.294 · Yargıtay 1. HD E.2020/522</p>
+              <p>Hüküm sonucu kısmında taraflara yüklenen borç ve tanınan haklar açıkça gösterilmelidir. Davacı yemin
+                deliline dayanmışsa <mark>karşı tarafa yemin teklif etme hakkı hatırlatılmadan</mark> karar verilemez.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODÜL 2: KAYNAK ARAMA -->
+        <div class="mod-view" data-mod-pane="kaynak" hidden>
+          <div class="mod-copy">
+            <h3>Kaynak Arama</h3>
+            <p class="mod-lead">Sorunuzu cümleyle yazın; arama kelimeye değil anlama bakar, aynı meseleyi başka sözcüklerle anlatan kararlar da bulunur.</p>
+            <ul class="clean-list">
+              <li>Güncel sekmesinde son 5 yılın kararları</li>
+              <li>Kelime sekmesinde sorudaki kelimelerin geçtiği kararlar</li>
+              <li>Karar, soruyla ilgili pasajda işaretli açılır; kararın içinde arama</li>
+              <li>Kopyalanan parça künyesiyle gelir</li>
+            </ul>
+          </div>
+          <div class="mod-canvas">
+            <div class="canvas-bar">
+              <div class="mini-seg" id="kaynakSortTabs">
+                <button type="button" class="is-on" data-ksort="ilgi">İlgi</button>
+                <button type="button" data-ksort="guncel">Güncel</button>
+                <button type="button" data-ksort="kelime">Kelime</button>
+              </div>
+              <input type="search" id="kaynakInSearch" class="in-case-search" placeholder="Karar içinde ara…"
+                aria-label="Karar içinde ara" />
+            </div>
+            <div class="query-line"><span>Sorgu</span><b id="kaynakQuery" data-text="Fatura düzenlenmemesi halinde özel usulsüzlük cezası hangi şartlarda kesilir?">Fatura düzenlenmemesi halinde özel usulsüzlük cezası hangi şartlarda kesilir?</b></div>
+            <div class="canvas-split">
+              <ul class="mini-list" id="kaynakList"></ul>
+              <div class="canvas-body">
+                <p class="canvas-meta"><b id="kaynakCourt"></b> · <span id="kaynakMeta"></span></p>
+                <div id="kaynakText"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODÜL 3: HUKUKİ ARAŞTIRMA -->
+        <div class="mod-view" data-mod-pane="arastirma" hidden>
+          <div class="mod-copy">
+            <h3>Hukuki Araştırma</h3>
+            <p class="mod-lead">Sorunuzla ilgili kararlar taranır ve kaynak gösteren bir rapor yazılır; raporun dayandığı kararlar künyeleriyle gösterilir.</p>
+            <ul class="clean-list">
+              <li>Dayanak kararlar tek tıkla, ilgili pasaj işaretli açılır</li>
+              <li>Son 5 yılın kararları ve sorudaki kelimelerin geçtiği kararlar ayrıca taranır</li>
+              <li>Kaynak kararlardan sonra değişen kanun maddeleri ayrıca uyarılır</li>
+              <li>Raporu tek tıkla kopyalama</li>
+            </ul>
+          </div>
+          <div class="mod-canvas">
+            <div class="canvas-bar">
+              <span>Örnek rapor · 27 aday okundu · 17 karara atıf</span>
+              <button type="button" class="copy-btn"
+                data-copy="213 s. VUK m.353 uyarınca özel usulsüzlük cezası için usulüne uygun somut tespit zorunludur (Danıştay 3. D., E.2020/1142 K.2022/2355).">Kopyala</button>
+            </div>
+            <div class="canvas-body">
+              <p>213 s. VUK m.353/1 uyarınca ceza kesilebilmesi için <mark>usulüne uygun somut tespit</mark> zorunludur
+                (<button type="button" class="cite-link" data-cite="c2">Danıştay 3. D., E.2020/4162</button>; <button
+                  type="button" class="cite-link" data-cite="c1">Danıştay 4. D., E.2020/153</button>).</p>
+              <div class="cite-inline-box" id="reportCiteDrawer">
+                <b id="citeDrawerTitle">Atıfa tıklayın</b>
+                <small id="citeDrawerMeta">Künye seçildiğinde dayanak pasaj burada görünür.</small>
+                <p id="citeDrawerText">Danıştay 3. veya 4. Daire atıflarına dokunarak gerekçeyi doğrulayın.</p>
+              </div>
+              <div class="risk-box"><b>Kaynak kararlardan sonra değişen hüküm:</b> VUK m.353 02.08.2024'te değişti (7524 s. K.). Bu maddeyi anan 27 kararın tümü değişiklikten önce verilmiş; güncel metni ayrıca kontrol edin.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODÜL 4: BELGE GELİŞTİRME -->
+        <div class="mod-view" data-mod-pane="belge" hidden>
+          <div class="mod-copy">
+            <h3>Belge Geliştirme</h3>
+            <p class="mod-lead">Belgenizi üretin, iyileştirin, dönüştürün. Önerileri kart kart onaylayın; yalnız onayladığınız öneri metne işlenir.</p>
+            <ul class="clean-list">
+              <li>Atıf yapılan kararlar ayrı sekmede</li>
+              <li>Her önerinin gerekçesi ve metindeki yeri; sonda Hukuki Risk Notu</li>
+              <li>PDF, Word, UDF ve fotoğraftan düzenlenebilir metne dönüştürme</li>
+              <li>Word (DOCX), PDF ve UYAP (UDF) olarak indirme</li>
+            </ul>
+          </div>
+          <div class="mod-canvas">
+            <div class="canvas-bar">
+              <div class="mini-seg" id="belgeModeTabs">
+                <button type="button" class="is-on" data-bmode="uret">Üret</button>
+                <button type="button" data-bmode="iyilestir">İyileştir</button>
+                <button type="button" data-bmode="donustur">Dönüştür</button>
+                <button type="button" data-bmode="atif">Atıf (2)</button>
+              </div>
+              <div class="canvas-tools">
+                <button type="button" class="copy-btn" data-toast-msg="Word (DOCX) indirildi.">DOCX</button>
+                <button type="button" class="copy-btn" data-toast-msg="PDF indirildi.">PDF</button>
+                <button type="button" class="copy-btn" data-toast-msg="UYAP (UDF) indirildi.">UDF</button>
+              </div>
+            </div>
+            <div class="canvas-body" id="belgeCanvas"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.5. MESLEK GRUPLARI — FOTOĞRAFLI SEKMELER -->
+    <section class="section section-soft" id="meslekler" aria-label="Meslek grupları">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="eyebrow">Kimler İçin</p>
+          <h2>Her meslek, <span class="tone">kendi araştırma düzeni.</span></h2>
+          <div class="mod-tabs" role="tablist" aria-label="Meslek grupları">
+            <button type="button" role="tab" aria-selected="true" class="is-on" data-meslek="avukat">Avukat</button>
+            <button type="button" role="tab" aria-selected="false" data-meslek="smmm">Mali Müşavir</button>
+            <button type="button" role="tab" aria-selected="false" data-meslek="bilirkisi">Bilirkişi</button>
+            <button type="button" role="tab" aria-selected="false" data-meslek="kurum">Kurum &amp; Kamu</button>
+          </div>
+        </header>
+
+        <article class="meslek-card" data-meslek-pane="avukat">
+          <div class="meslek-photo"><img src="assets/meslek-avukat.jpg" alt="Toplantı masasında dosya inceleyen avukatlar" loading="lazy" width="900" height="675" /></div>
+          <div class="meslek-copy">
+            <span class="meslek-tag">Avukatlar</span>
+            <h3>Dosyadan dilekçeye tek masada.</h3>
+            <p>Yerleşik Yargıtay içtihadını sorunuzu cümleyle yazarak bulun, kararı ilgili pasajı işaretli okuyun; atıflı dilekçe taslağını Word ya da UYAP (UDF) olarak indirin. AAÜT ücretini ve istinaf süresini aynı panelde hesaplayın.</p>
+            <div class="meslek-chips"><span>Kaynak Arama</span><span>Belge Geliştirme</span><span>AAÜT &amp; Adli Süre</span></div>
+            <a href="#moduller" class="link-arrow" data-goto-mod="belge">Belge Geliştirme'yi görün →</a>
+          </div>
+        </article>
+
+        <article class="meslek-card" data-meslek-pane="smmm" hidden>
+          <div class="meslek-photo"><img src="assets/meslek-smmm.jpg" alt="Belge üzerinde kalemle çalışan mali müşavir" loading="lazy" width="900" height="675" /></div>
+          <div class="meslek-copy">
+            <span class="meslek-tag">Mali Müşavirler (SMMM)</span>
+            <h3>Vergi uyuşmazlığında Danıştay ne diyor?</h3>
+            <p>Özel usulsüzlük cezası gibi sorularda Danıştay kararlarını tarayan, kaynak gösteren bir rapor alın. Raporda anılan VUK maddesi kararlardan sonra değiştiyse güncel metin ayrıca gösterilir. Kanun, yönetmelik ve tebliğler de aynı aramada.</p>
+            <div class="meslek-chips"><span>Hukuki Araştırma</span><span>Mevzuat</span><span>Değişen Hüküm Uyarısı</span></div>
+            <a href="#moduller" class="link-arrow" data-goto-mod="arastirma">Hukuki Araştırma'yı görün →</a>
+          </div>
+        </article>
+
+        <article class="meslek-card" data-meslek-pane="bilirkisi" hidden>
+          <div class="meslek-photo"><img src="assets/meslek-bilirkisi.jpg" alt="Masada rapor imzalayan bilirkişi" loading="lazy" width="900" height="675" /></div>
+          <div class="meslek-copy">
+            <span class="meslek-tag">Bilirkişiler</span>
+            <h3>Raporunuzu kararlarla destekleyin.</h3>
+            <p>Tespitlerinizin dayandığı yüksek mahkeme kararlarını künyesiyle bulun, kopyaladığınız pasaj künyesiyle gelsin. Faiz ve harç hesabını dönem dönem dökümü ve dayanağıyla alın.</p>
+            <div class="meslek-chips"><span>Künye Arama</span><span>Faiz &amp; Harç</span><span>Künyeli Kopyalama</span></div>
+            <a href="#panel" class="link-arrow">Hesap panelini görün →</a>
+          </div>
+        </article>
+
+        <article class="meslek-card" data-meslek-pane="kurum" hidden>
+          <div class="meslek-photo"><img src="assets/meslek-kurum.jpg" alt="Gece şehir manzarası ve kurum binaları" loading="lazy" width="900" height="675" /></div>
+          <div class="meslek-copy">
+            <span class="meslek-tag">Kurumlar ve Kamu</span>
+            <h3>İdari kararlar ve yargı, birlikte.</h3>
+            <p>Kamu İhale Kurulu, Rekabet Kurumu, KVKK ve Sayıştay kararlarını Danıştay içtihadıyla aynı aramada tarayın. Kurumlar ve kamu kuruluşları için ayrı paketlerimiz var.</p>
+            <div class="meslek-chips"><span>14 İdari Kaynak</span><span>Sayıştay</span><span>Kurumsal Paket</span></div>
+            <a href="#iletisim" class="link-arrow">Kurumsal paket için iletişim →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. NEDEN LEXONOMI? -->
+    <!-- 4. NEDEN LEXONOMI? — STRIPE TARZI 4 SÜTUNLU OMURGA + RADYAL KAYNAK AĞI -->
+    <section class="section section-backbone" id="neden">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="eyebrow">Neden Lexonomi?</p>
+          <h2>Hukuki araştırmanın <span class="tone">omurgası.</span></h2>
+        </header>
+
+        <div class="backbone-strip reveal">
+          <div class="bb-cell">
+            <strong>36</strong>
+            <p>yargı, idari, mevzuat ve uluslararası kaynak tek aramada</p>
+          </div>
+          <div class="bb-cell">
+            <strong>4 Modül</strong>
+            <p>Künye, Kaynak, Hukuki Araştırma ve Belge aynı masada</p>
+          </div>
+          <div class="bb-cell">
+            <strong>Tam Metin</strong>
+            <p>her sonuç veri tabanındaki gerçek karardan açılır</p>
+          </div>
+          <div class="bb-cell">
+            <strong>DOCX · UDF</strong>
+            <p>onaylı iyileştirme, Hukuki Risk Notu ve UYAP çıktısı</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="backbone-horizon" aria-hidden="true">
+        <svg id="backboneSvg" viewBox="0 0 1200 280" fill="none" preserveAspectRatio="xMidYMax slice"></svg>
+      </div>
+    </section>
+
+    <!-- 5. HESAP PANELİ — SADE VE İŞLEVSEL -->
+    <section class="section" id="panel">
+      <div class="container">
+        <header class="sec-head reveal">
+          <h2>Hesaplamalar. <span class="tone">Ajanda. Üyelik.</span></h2>
+        </header>
+
+        <div class="panel-grid reveal">
+          <!-- SOL: HESAPLAYICILAR -->
+          <div class="panel-box">
+            <div class="mini-seg mini-seg-4" role="tablist" aria-label="Hesaplayıcılar">
+              <button type="button" role="tab" aria-selected="true" data-calc="aaut" class="is-on">AAÜT</button>
+              <button type="button" role="tab" aria-selected="false" data-calc="faiz">Faiz</button>
+              <button type="button" role="tab" aria-selected="false" data-calc="sure">Adli</button>
+              <button type="button" role="tab" aria-selected="false" data-calc="harc">Harç</button>
+            </div>
+
+            <div class="calc-pane" data-pane="aaut">
+              <div class="two-col">
+                <label class="field">Tarife kalemi
+                  <select id="aautTarife">
+                    <option value="62000" selected>Asliye mahkemeleri</option>
+                  </select>
+                </label>
+                <label class="field">Sonuçlanma
+                  <select id="aautSonuc">
+                    <option value="1" selected>Esastan karar</option>
+                    <option value="0.5">Sulh / feragat (%50)</option>
+                    <option value="maktu">Görevsizlik (maktu)</option>
+                  </select>
+                </label>
+              </div>
+              <div class="two-col">
+                <label class="field">Dava değeri (TL)
+                  <input id="aautInput" inputmode="numeric" value="2.500.000" autocomplete="off" />
+                </label>
+                <label class="field">Kabul edilen miktar (TL)
+                  <input id="aautKabul" inputmode="numeric" placeholder="Tamamı" autocomplete="off" />
+                </label>
+              </div>
+              <input type="range" id="aautRange" min="100000" max="15000000" step="50000" value="2500000"
+                aria-label="Dava değeri" />
+              <div class="calc-out">
+                <div><span>Vekâlet ücreti · 2026–2027 AAÜT (RG 3.11.2026, s.33419)</span><small id="aautBreakdown"></small></div>
+                <output id="aautOut">374.000,00 TL</output>
+              </div>
+            </div>
+
+            <div class="calc-pane" data-pane="faiz" hidden>
+              <div class="two-col">
+                <label class="field">Anapara (TL)<input id="faizAna" inputmode="numeric" value="100.000" /></label>
+                <label class="field">Faiz türü<select id="faizTur"><option value="adi" selected>Adi kanuni faiz</option></select></label>
+              </div>
+              <div class="two-col">
+                <label class="field">Faiz başlangıcı<input id="faizBas" type="date" value="2024-01-01" /></label>
+                <label class="field">Faiz bitişi<input id="faizBit" type="date" value="2024-12-31" /></label>
+              </div>
+              <div class="calc-out">
+                <div><span>Toplam alacak</span><small id="faizBreakdown">Anapara 100.000,00 + faiz 17.753,43 (365 gün): 01.01–31.05.2024 %9 = 3.747,95 · 01.06–30.12.2024 %24 = 14.005,48 · Dayanak · 3095 s.K. m.1 · CB Kararı 8485 (RG 21.05.2024/32552)</small></div>
+                <output id="faizOut">117.753,43 TL</output>
+              </div>
+            </div>
+
+            <div class="calc-pane" data-pane="sure" hidden>
+              <div class="two-col">
+                <label class="field">Gerekçeli kararın tebliği<input id="sureTarih" type="date" value="2026-08-06" /></label>
+                <label class="field">Süre (Hukuk · HMK)<select id="sureGun">
+                    <option value="14" data-dayanak="HMK m.345" selected>İstinaf · 2 hafta</option>
+                    <option value="14" data-dayanak="HMK m.361">Temyiz · 2 hafta</option>
+                    <option value="14" data-dayanak="HMK m.127">Cevap dilekçesi · 2 hafta</option>
+                  </select></label>
+              </div>
+              <div class="calc-out">
+                <div><span>Son gün</span><small id="sureBreakdown">2 hafta → 20.08.2026 adli tatilde; tatilin bittiği 31 Ağustos'tan itibaren bir hafta uzar (HMK m.104). · Dayanak · HMK m.345</small></div><output
+                  id="sureOut">07.09.2026 Pazartesi</output>
+              </div>
+              <p class="calc-note">Önizleme: hafta sonu, adli tatil ve sabit tarihli resmî tatiller hesaba katılır; dinî bayramlar için uygulamadaki hesaplayıcıyı kullanın.</p>
+            </div>
+
+            <div class="calc-pane" data-pane="harc" hidden>
+              <label class="field">Dava değeri (TL)<input id="harcDeger" inputmode="numeric"
+                  value="1.000.000" /></label>
+              <div class="calc-out">
+                <div><span>Peşin karar ve ilam harcı (1/4)</span><small id="harcBreakdown">1.000.000 × binde 68,31 ÷ 4 · Dayanak · 492 s. Harçlar Kanunu</small></div><output
+                  id="harcOut">17.077,50 TL</output>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAĞ: HESAP DURUMU -->
+          <div class="panel-box" id="accountCard" data-tier="pro">
+            <div class="mini-seg mini-seg-4" role="tablist" aria-label="Hesap sekmeleri">
+              <button type="button" data-acc="uyelik" class="is-on">Üyelik</button>
+              <button type="button" data-acc="ajanda">Ajanda</button>
+              <button type="button" data-acc="profil">Profil</button>
+              <button type="button" data-acc="fatura">Fatura</button>
+            </div>
+
+            <div data-acc-pane="uyelik">
+              <div class="acc-head-row">
+                <div>
+                  <span class="tier-badge" id="accTierBadge">Profesyonel</span>
+                  <b id="accPlanName">Profesyonel</b>
+                  <small>1 Aralık 2026 · 22 gün kaldı</small>
+                </div>
+                <div class="mini-plan-btns">
+                  <button type="button" data-switch-plan="temel">Temel</button>
+                  <button type="button" data-switch-plan="uzman">Uzman</button>
+                  <button type="button" data-switch-plan="pro" class="is-on">Pro</button>
+                </div>
+              </div>
+              <div class="usage-list" id="accUsageList"></div>
+            </div>
+
+            <div data-acc-pane="ajanda" hidden>
+              <ul class="simple-rows">
+                <li><b>27 Kas · 10:30</b><span>İstanbul 14. İş Mahkemesi · Tanık duruşması</span></li>
+                <li><b>29 Kas · 17:00</b><span>İstinaf dilekçesi son günü · E.2024/118</span></li>
+                <li><b>01 Ara · 14:00</b><span>Arabuluculuk ilk oturum</span></li>
+              </ul>
+            </div>
+
+            <div data-acc-pane="profil" hidden>
+              <ul class="simple-rows">
+                <li><b>Kullanıcı</b><span>Av. Örnek Kullanıcı · İstanbul Barosu</span></li>
+                <li><b>E-posta</b><span>ornek@hukukburosu.test</span></li>
+                <li><b>Yenileme</b><span>Günlük limit her gün 00:00 (TSİ)</span></li>
+              </ul>
+            </div>
+
+            <div data-acc-pane="fatura" hidden>
+              <ul class="simple-rows" id="accInvoiceList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. GÜVEN VE ŞEFFAFLIK
+         Not: "yerel yapay zekâ", "sıfır halüsinasyon", "Baro ilkeleri", "TÜBİTAK projesi" iddiaları
+         lexonomi.com'da yer almadığı için çıkarıldı. Doğrulanırsa (belgeyle) yeniden eklenebilir. -->
+    <section class="section section-soft" id="guvenlik">
+      <div class="container">
+        <header class="sec-head reveal">
+          <p class="eyebrow">Güven ve Şeffaflık</p>
+          <h2>Her sonucu <span class="tone">kendiniz doğrularsınız.</span></h2>
+        </header>
+
+        <div class="trust-grid reveal">
+          <article>
+            <h3>Gerçek kararlar</h3>
+            <p>Her sonuç veri tabanımızdaki bir karardır; künyesiyle listelenir ve tam metniyle açılır.</p>
+          </article>
+          <article>
+            <h3>Açılabilir dayanaklar</h3>
+            <p>Araştırma raporunun dayandığı kararları tek tıkla açıp ilgili pasajı kendiniz okursunuz.</p>
+          </article>
+          <article>
+            <h3>Değişen hüküm uyarısı</h3>
+            <p>Rapordaki bir madde kaynak kararlardan sonra değiştiyse ayrıca gösterilir ve güncel metni verilir.</p>
+          </article>
+          <article>
+            <h3>Yazılı veri politikası</h3>
+            <p>Verilerin işlenmesi <a href="https://lexonomi.com/sozlesmeler/veri-isleme-protokolu" target="_blank" rel="noopener">Veri İşleme Protokolü</a> ve <a href="https://lexonomi.com/sozlesmeler/aydinlatma-metni" target="_blank" rel="noopener">Aydınlatma Metni</a>'nde; yalnızca zorunlu çerezler.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PAKETLER — SADE VE NET -->
+    <section class="section" id="fiyatlar">
+      <div class="container">
+        <header class="sec-head reveal">
+          <h2>Çalışma yoğunluğunuza göre <span class="tone">üç paket.</span></h2>
+          <div class="billing" role="group" aria-label="Ödeme dönemi">
+            <button type="button" class="is-on" data-billing="monthly" aria-pressed="true">Aylık</button>
+            <button type="button" data-billing="yearly" aria-pressed="false">Yıllık · 10 ay fiyatına 365 gün</button>
+          </div>
+        </header>
+
+        <div class="plans reveal">
+          <article class="plan plan-temel" data-tier="temel">
+            <span class="tier-badge">Giriş</span>
+            <h3>Temel</h3>
+            <p class="plan-aud">Bireysel başlangıç: genç avukat ve SMMM</p>
+            <p class="price"><span data-m="1.500" data-y="15.000">1.500</span> ₺<small data-m="/ ay" data-y="/ yıl">/
+                ay</small></p>
+            <p class="plan-yearly">Yıllık ödemede 15.000 ₺ · 10 ay fiyatına 365 gün</p>
+            <ul class="clean-list">
+              <li>Ayda 4.500 · günde en çok 150 arama</li>
+              <li>Ayda 30 hukuki araştırma</li>
+              <li class="is-off">Belge geliştirme yok</li>
+            </ul>
+            <a href="https://app.lexonomi.com/" class="btn btn-tier btn-block" data-app-link="kayit"
+              data-select-plan="temel">Bu paketle başla</a>
+          </article>
+
+          <article class="plan plan-uzman plan-featured" data-tier="uzman">
+            <span class="tier-badge">Önerilen</span>
+            <h3>Uzman</h3>
+            <p class="plan-aud">Aktif dava ve mevzuat çalışan uzmanlar</p>
+            <p class="price"><span data-m="3.500" data-y="35.000">3.500</span> ₺<small data-m="/ ay" data-y="/ yıl">/
+                ay</small></p>
+            <p class="plan-yearly">Yıllık ödemede 35.000 ₺ · 10 ay fiyatına 365 gün</p>
+            <ul class="clean-list">
+              <li>Ayda 7.500 · günde en çok 250 arama</li>
+              <li>Ayda 250 hukuki araştırma</li>
+              <li>Ayda 30 belge geliştirme</li>
+            </ul>
+            <a href="https://app.lexonomi.com/" class="btn btn-tier btn-block" data-app-link="kayit"
+              data-select-plan="uzman">Bu paketle başla</a>
+          </article>
+
+          <article class="plan plan-pro" data-tier="pro">
+            <span class="tier-badge">Seçkin</span>
+            <h3>Profesyonel</h3>
+            <p class="plan-aud">Yoğun dilekçe, mütalaa ve rapor üretenler</p>
+            <p class="price"><span data-m="5.000" data-y="50.000">5.000</span> ₺<small data-m="/ ay" data-y="/ yıl">/
+                ay</small></p>
+            <p class="plan-yearly">Yıllık ödemede 50.000 ₺ · 10 ay fiyatına 365 gün</p>
+            <ul class="clean-list">
+              <li>Ayda 15.000 · günde en çok 500 arama</li>
+              <li>Ayda 1.000 hukuki araştırma</li>
+              <li>Ayda 150 belge geliştirme</li>
+            </ul>
+            <a href="https://app.lexonomi.com/" class="btn btn-tier btn-block" data-app-link="kayit"
+              data-select-plan="pro">Bu paketle başla</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. BLOG & REHBERLER (ALTYAPI HAZIR) -->
+    <section class="section section-soft" id="blog">
+      <div class="container">
+        <header class="sec-head sec-head-row reveal">
+          <div>
+            <p class="eyebrow">Rehberler</p>
+            <h2>Hukuki analizler <span class="tone">ve notlar.</span></h2>
+          </div>
+          <a href="blog/index.html" class="link-arrow">Tüm yazılar →</a>
+        </header>
+
+        <div class="blog-row reveal">
+          <a class="blog-item" href="blog/yerel-sunucularda-yapay-zeka-ve-kvkk.html">
+            <span>Veri Güvenliği &amp; KVKK · Dr. Ömer Faruk BAYRAKCI</span>
+            <b>Yerel Sunucularda Yapay Zekâ ve Veri İşleme: KVKK ve Sır Saklama Yükümlülüğü</b>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SSS & SÖZLEŞMELER -->
+    <section class="section" id="sss">
+      <div class="container narrow">
+        <header class="sec-head reveal">
+          <h2>Sık sorulan sorular</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Sonuçlardaki kararlar gerçek mi?</summary>
+            <p>Evet. Her sonuç veri tabanımızdaki bir karardır; künyesiyle listelenir ve tam metniyle açılır. Araştırma raporunun dayandığı kararları da açıp kendiniz okursunuz.</p>
+          </details>
+          <details>
+            <summary>Hangi kaynaklarda arama yapabilirim?</summary>
+            <p>Yargı kararlarında 8 kaynak: Yargıtay, Danıştay, Anayasa Mahkemesi (norm denetimi ve bireysel başvuru), Uyuşmazlık Mahkemesi, bölge adliye ve bölge idare mahkemeleri, ilk derece mahkemeleri ve Sayıştay. Bunlara ek olarak 14 idari kaynak (ör. Kamu İhale Kurulu, Rekabet Kurumu, Kişisel Verileri Koruma Kurulu, RTÜK), 9 mevzuat türü (kanunlar, yönetmelikler, tebliğler, Cumhurbaşkanlığı kararnameleri ve diğerleri) ve 5 uluslararası kaynak (AİHM, uluslararası antlaşmalar; Almanya, Fransa ve İsviçre yüksek mahkemeleri).</p>
+          </details>
+          <details>
+            <summary>Kelimesi kelimesine arayabilir miyim?</summary>
+            <p>Evet. Kelime sekmesi yazdığınız kelimelerin geçtiği kararları listeler. Tırnak içine aldığınız ifadeyi taşıyan kararlar varsa liste onlarla sınırlanır.</p>
+          </details>
+          <details>
+            <summary>Ücretsiz deneyebilir miyim?</summary>
+            <p>Evet. Yeni hesaplar 30 günlük ücretsiz deneme ile başlar: 100 arama (kaynak ve künye), 20 hukuki araştırma ve 10 belge geliştirme hakkı verilir. Demo hesap başına bir kez tanımlanır ve yenilenmez. 30 gün dolunca ya da haklar bitince paketlerden biriyle devam edebilirsiniz.</p>
+          </details>
+          <details>
+            <summary>Paket haklarım ne zaman yenilenir?</summary>
+            <p>Arama (kaynak ve künye), hukuki araştırma ve belge geliştirme hakları 30 günlüktür; paketinizin başladığı günden itibaren her 30 günde bir Türkiye saatiyle 00:00'da yenilenir. Aylık lisans 30 gün, yıllık lisans 365 gün geçerlidir; satın aldığınız gün bu süreye dahildir. Günlük arama sınırı ise her gün Türkiye saatiyle 00:00'da yenilenir.</p>
+          </details>
+          <details>
+            <summary>Telefonda kullanabilir miyim?</summary>
+            <p>Evet. Lexonomi tarayıcıda çalışır; telefonda ekrana uygun dizilimle açılır, ayrı uygulama indirmeniz gerekmez.</p>
+          </details>
+        </div>
+
+        <div class="legal-strip" id="sozlesmeler">
+          <span>Sözleşmeler ve yasal metinler:</span>
+          <a href="https://lexonomi.com/sozlesmeler/kullanici-sozlesmesi" target="_blank" rel="noopener">Kullanıcı
+            Sözleşmesi</a>
+          <a href="https://lexonomi.com/sozlesmeler/deneme-surumu-kullanim-sozlesmesi" target="_blank"
+            rel="noopener">Deneme Sürümü Kullanım Sözleşmesi</a>
+          <a href="https://lexonomi.com/sozlesmeler/kabul-edilebilir-kullanim-politikasi" target="_blank"
+            rel="noopener">Kabul Edilebilir Kullanım Politikası</a>
+          <a href="https://lexonomi.com/sozlesmeler/veri-isleme-protokolu" target="_blank" rel="noopener">Veri İşleme ve Veri Aktarım Protokolü</a>
+          <a href="https://lexonomi.com/sozlesmeler/fiyat-politikasi" target="_blank" rel="noopener">Fiyat
+            Politikası</a>
+          <a href="https://lexonomi.com/cerez-politikasi" target="_blank" rel="noopener">Çerez Politikası</a>
+          <a href="https://lexonomi.com/sozlesmeler/aydinlatma-metni" target="_blank" rel="noopener">Aydınlatma
+            Metni</a>
+          <a href="https://lexonomi.com/sozlesmeler/ticari-elektronik-ileti-onay-metni" target="_blank"
+            rel="noopener">Ticari Elektronik İleti Onay Metni</a>
+        </div>
+      </div>
+    </section>
+    <!-- 10. KAPANIŞ ÇAĞRISI -->
+    <section class="closing" aria-label="Başlayın">
+      <div class="container closing-inner reveal">
+        <h2>Araştırmaya <span class="tone">bugün başlayın.</span></h2>
+        <p>30 gün ücretsiz: 100 arama, 20 hukuki araştırma ve 10 belge geliştirme.</p>
+        <div class="closing-cta">
+          <a href="https://app.lexonomi.com/" class="btn btn-primary" data-app-link="kayit">30 gün ücretsiz deneyin</a>
+          <a href="#fiyatlar" class="btn btn-ghost">Paketleri inceleyin</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SADE FOOTER / İLETİŞİM -->
+  <footer class="site-footer" id="iletisim">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand"><span class="brand-word">LEXONOMI</span></a>
+        <p class="muted">Hukuk Kaynakları Analitiği Platformu</p>
+        <p class="muted">© <span id="year"></span> İnter Mundos Yazılım ve Teknoloji Anonim Şirketi</p>
+      </div>
+      <address class="footer-contact">
+        <p>Pamukkale Teknoloji Geliştirme Bölgesi, Kınıklı Mah. Hüseyin Yılmaz Cad. No: 67 İç Kapı No: 2, Pamukkale /
+          Denizli</p>
+        <p>Tel: <a href="tel:+908508403243">0850 840 32 43</a> · <a
+            href="mailto:info@lexonomi.com">info@lexonomi.com</a> · KEP: <a
+            href="mailto:inter.mundos@hs01.kep.tr">inter.mundos@hs01.kep.tr</a> · MERSİS: 0478123270700001</p>
+      </address>
+    </div>
+  </footer>
+
+  <aside class="cookie-bar" id="cookieBar" role="region" aria-label="Çerez bildirimi" hidden>
+    <p>Lexonomi yalnızca zorunlu çerezler kullanır. <a href="https://lexonomi.com/cerez-politikasi" target="_blank"
+        rel="noopener">Çerez Politikası</a></p>
+    <button type="button" class="btn btn-primary btn-sm" id="cookieAccept">Tamam</button>
+  </aside>
+
+  <div class="landscape-curtain" role="alertdialog" aria-modal="true" aria-labelledby="landscapeTitle">
+    <div><b id="landscapeTitle">Cihazı dik tutun</b>
+      <p>Lexonomi telefonda dikey kullanım için tasarlandı.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="hero-media.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+
+</html>
