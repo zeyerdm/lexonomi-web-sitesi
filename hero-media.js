@@ -4,7 +4,7 @@
  * yalnızca bu dosyadaki yolları güncellemeniz yeterlidir.
  */
 window.LEXONOMI_HERO_MEDIA = {
-  // Montaj v7 (13,8 sn, 1080p): veri küpleri (kodla üretildi), ürün ekranları, klavye, cam cephe, terazi; petrol tonu, yumuşak geçişler.
+  // Montaj v7 (13,9 sn, 1080p): veri küpleri (kodla üretildi), ürün ekranları, klavye, cam cephe, terazi, çift sayfa kapanış; petrol tonu, yumuşak geçişler.
   videoMp4: 'assets/hero-video.mp4',
   videoWebm: '',
   poster: 'assets/hero-poster.jpg',
