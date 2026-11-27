@@ -2561,6 +2561,55 @@ input[type="range"] {
   }
 }
 
+/* NEDEN LEXONOMİ — 7 TEMEL İLKE */
+.pillars-7 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.pillar-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+
+.pillar-num {
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--teal);
+}
+
+.pillar-card h2 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.pillar-card p {
+  margin: 0;
+  font-size: .9rem;
+  color: var(--ink-body);
+}
+
+.pillar-wide {
+  grid-column: span 3;
+}
+
+@media (max-width: 920px) {
+  .pillars-7 {
+    grid-template-columns: 1fr;
+  }
+
+  .pillar-wide {
+    grid-column: auto;
+  }
+}
+
 /* Katman kartları: eskisi hızlı çıkar, yenisi gecikmeli girer (üst üste binmesin) */
 .stack-cap {
   transition: opacity .18s ease, transform .18s ease;
