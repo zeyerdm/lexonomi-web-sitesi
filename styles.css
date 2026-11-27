@@ -2576,6 +2576,14 @@ input[type="range"] {
   display: flex;
   flex-direction: column;
   gap: .45rem;
+  transition: border-color .32s var(--ease), background .32s var(--ease), box-shadow .32s var(--ease), transform .28s var(--ease);
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  background: radial-gradient(circle at 85% 0%, color-mix(in srgb, var(--teal) 22%, transparent), transparent 62%), color-mix(in srgb, var(--surface) 90%, var(--teal));
+  border-color: color-mix(in srgb, var(--teal) 80%, transparent);
+  box-shadow: 0 24px 52px -24px color-mix(in srgb, var(--teal) 48%, transparent);
 }
 
 .pillar-num {
@@ -2624,6 +2632,7 @@ input[type="range"] {
    ========================================================================== */
 
 /* İki tonlu başlık (logo rengi) */
+h1 .tone,
 h2 .tone {
   color: var(--teal);
 }
