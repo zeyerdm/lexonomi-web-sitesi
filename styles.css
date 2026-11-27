@@ -415,6 +415,32 @@ h2 {
   max-width: 460px;
 }
 
+.em-kicker {
+  display: block;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: .3rem;
+}
+
+.em-list-reveal .em-row {
+  transition: border-color .28s var(--ease), opacity .55s var(--ease), transform .55s var(--ease);
+}
+
+.em-list-reveal .em-row strong {
+  transition: color .28s var(--ease);
+}
+
+.em-list-reveal .em-row:hover {
+  border-top-color: var(--teal);
+}
+
+.em-list-reveal .em-row:hover strong {
+  color: var(--teal);
+}
+
 /* 3. MODÜLLER — SADE SEKMELİ */
 .mod-tabs {
   display: inline-flex;
