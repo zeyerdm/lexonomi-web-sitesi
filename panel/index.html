@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Hesap Paneli — Lexonomi</title>
+  <meta name="description" content="2026–2027 AAÜT vekâlet ücreti, kanuni faiz, HMK adli süre ve harç hesaplayıcıları; ajanda ve üyelik takibi tek panelde." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lexonomi.com/panel/" />
+  <meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0D1418" media="(prefers-color-scheme: dark)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hesap Paneli — Lexonomi" />
+  <meta property="og:description" content="AAÜT, faiz, adli süre ve harç hesaplayıcıları ile ajanda ve üyelik yönetimi." />
+  <meta property="og:url" content="https://lexonomi.com/panel/" />
+  <meta property="og:image" content="https://lexonomi.com/assets/opengraph-image.png" />
+  <link rel="icon" href="../assets/favicon.ico" sizes="48x48" type="image/x-icon" />
+  <link rel="icon" href="../assets/icon.svg" sizes="any" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="Lexonomi Ana Sayfa">
+        <svg class="brand-logo" viewBox="218 122 200 166" fill="none" aria-hidden="true">
+          <circle cx="238" cy="249" r="13" fill="currentColor"></circle>
+          <circle cx="398" cy="250" r="13" fill="currentColor"></circle>
+          <path d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257" stroke="currentColor" stroke-width="13" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-word">LEXONOMI</span>
+      </a>
+      <nav class="nav" aria-label="Ana menü">
+        <a href="../index.html#moduller">Modüller</a>
+        <a href="../neden/index.html">Neden Lexonomi</a>
+        <a href="../panel/index.html" aria-current="page">Panel</a>
+        <a href="../paketler/index.html">Paketler</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../sss/index.html">SSS</a>
+        <a href="../iletisim/index.html">İletişim</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://app.lexonomi.com/" class="nav-login hide-sm" data-app-link="giris">Giriş Yap</a>
+        <a href="https://app.lexonomi.com/" class="btn btn-primary btn-sm hide-sm" data-app-link="kayit">Hesap Oluştur</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <nav>
+        <a href="../index.html#moduller">Modüller</a>
+        <a href="../neden/index.html">Neden Lexonomi</a>
+        <a href="../panel/index.html">Hesap Paneli</a>
+        <a href="../index.html#guvenlik">Gizlilik</a>
+        <a href="../paketler/index.html">Paketler</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../sss/index.html">SSS</a>
+        <a href="../iletisim/index.html">İletişim</a>
+      </nav>
+      <div class="mobile-cta">
+        <a href="https://app.lexonomi.com/" class="btn btn-ghost btn-block" data-app-link="giris">Giriş Yap</a>
+        <a href="https://app.lexonomi.com/" class="btn btn-primary btn-block" data-app-link="kayit">Hesap Oluştur</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="İçerik yolu">
+          <a href="../index.html">Ana Sayfa</a><span>/</span><span aria-current="page">Hesap Paneli</span>
+        </nav>
+        <h1>Hesaplamalar. <span class="tone">Ajanda. Üyelik.</span></h1>
+        <p class="hero-lead">Güncel mevzuat ve tarife dayanaklı hesaplayıcılar, duruşma takvimi ve kota takibi tek ekranda.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panel-grid reveal">
+          <!-- SOL: HESAPLAYICILAR -->
+          <div class="panel-box">
+            <div class="mini-seg mini-seg-4" role="tablist" aria-label="Hesaplayıcılar">
+              <button type="button" role="tab" aria-selected="true" data-calc="aaut" class="is-on">AAÜT</button>
+              <button type="button" role="tab" aria-selected="false" data-calc="faiz">Faiz</button>
+              <button type="button" role="tab" aria-selected="false" data-calc="sure">Adli</button>
+              <button type="button" role="tab" aria-selected="false" data-calc="harc">Harç</button>
+            </div>
+
+            <div class="calc-pane" data-pane="aaut">
+              <div class="two-col">
+                <label class="field">Tarife kalemi
+                  <select id="aautTarife">
+                    <option value="62000" selected>Asliye mahkemeleri</option>
+                  </select>
+                </label>
+                <label class="field">Sonuçlanma
+                  <select id="aautSonuc">
+                    <option value="1" selected>Esastan karar</option>
+                    <option value="0.5">Sulh / feragat (%50)</option>
+                    <option value="maktu">Görevsizlik (maktu)</option>
+                  </select>
+                </label>
+              </div>
+              <div class="two-col">
+                <label class="field">Dava değeri (TL)
+                  <input id="aautInput" inputmode="numeric" value="2.500.000" autocomplete="off" />
+                </label>
+                <label class="field">Kabul edilen miktar (TL)
+                  <input id="aautKabul" inputmode="numeric" placeholder="Tamamı" autocomplete="off" />
+                </label>
+              </div>
+              <input type="range" id="aautRange" min="100000" max="15000000" step="50000" value="2500000" aria-label="Dava değeri" />
+              <div class="calc-out">
+                <div><span>Vekâlet ücreti · 2026–2027 AAÜT (RG 3.11.2026, s.33419)</span><small id="aautBreakdown"></small></div>
+                <output id="aautOut">374.000,00 TL</output>
+              </div>
+            </div>
+
+            <div class="calc-pane" data-pane="faiz" hidden>
+              <div class="two-col">
+                <label class="field">Anapara (TL)<input id="faizAna" inputmode="numeric" value="100.000" /></label>
+                <label class="field">Faiz türü<select id="faizTur">
+                    <option value="adi" selected>Adi kanuni faiz</option>
+                  </select></label>
+              </div>
+              <div class="two-col">
+                <label class="field">Faiz başlangıcı<input id="faizBas" type="date" value="2024-01-01" /></label>
+                <label class="field">Faiz bitişi<input id="faizBit" type="date" value="2024-12-31" /></label>
+              </div>
+              <div class="calc-out">
+                <div><span>Toplam alacak</span><small id="faizBreakdown">Anapara 100.000,00 + faiz 17.753,43 (365 gün): 01.01–31.05.2024 %9 = 3.747,95 · 01.06–30.12.2024 %24 = 14.005,48 · Dayanak · 3095 s.K. m.1 · CB Kararı 8485 (RG 21.05.2024/32552)</small></div>
+                <output id="faizOut">117.753,43 TL</output>
+              </div>
+            </div>
+
+            <div class="calc-pane" data-pane="sure" hidden>
+              <div class="two-col">
+                <label class="field">Gerekçeli kararın tebliği<input id="sureTarih" type="date" value="2026-08-06" /></label>
+                <label class="field">Süre (Hukuk · HMK)<select id="sureGun">
+                    <option value="14" data-dayanak="HMK m.345" selected>İstinaf · 2 hafta</option>
+                    <option value="14" data-dayanak="HMK m.361">Temyiz · 2 hafta</option>
+                    <option value="14" data-dayanak="HMK m.127">Cevap dilekçesi · 2 hafta</option>
+                  </select></label>
+              </div>
+              <div class="calc-out">
+                <div><span>Son gün</span><small id="sureBreakdown">2 hafta → 20.08.2026 adli tatilde; tatilin bittiği 31 Ağustos'tan itibaren bir hafta uzar (HMK m.104). · Dayanak · HMK m.345</small></div><output id="sureOut">07.09.2026 Pazartesi</output>
+              </div>
+              <p class="calc-note">Önizleme: hafta sonu, adli tatil ve sabit tarihli resmî tatiller hesaba katılır; dinî bayramlar için uygulamadaki hesaplayıcıyı kullanın.</p>
+            </div>
+
+            <div class="calc-pane" data-pane="harc" hidden>
+              <label class="field">Dava değeri (TL)<input id="harcDeger" inputmode="numeric" value="1.000.000" /></label>
+              <div class="calc-out">
+                <div><span>Peşin karar ve ilam harcı (1/4)</span><small id="harcBreakdown">1.000.000 × binde 68,31 ÷ 4 · Dayanak · 492 s. Harçlar Kanunu</small></div><output id="harcOut">17.077,50 TL</output>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAĞ: HESAP DURUMU -->
+          <div class="panel-box" id="accountCard" data-tier="pro">
+            <div class="mini-seg mini-seg-4" role="tablist" aria-label="Hesap sekmeleri">
+              <button type="button" data-acc="uyelik" class="is-on">Üyelik</button>
+              <button type="button" data-acc="ajanda">Ajanda</button>
+              <button type="button" data-acc="profil">Profil</button>
+              <button type="button" data-acc="fatura">Fatura</button>
+            </div>
+
+            <div data-acc-pane="uyelik">
+              <div class="acc-head-row">
+                <div>
+                  <span class="tier-badge" id="accTierBadge">Profesyonel</span>
+                  <b id="accPlanName">Profesyonel</b>
+                  <small>1 Aralık 2026 · 22 gün kaldı</small>
+                </div>
+                <div class="mini-plan-btns">
+                  <button type="button" data-switch-plan="temel">Temel</button>
+                  <button type="button" data-switch-plan="uzman">Uzman</button>
+                  <button type="button" data-switch-plan="pro" class="is-on">Pro</button>
+                </div>
+              </div>
+              <div class="usage-list" id="accUsageList"></div>
+            </div>
+
+            <div data-acc-pane="ajanda" hidden>
+              <ul class="simple-rows">
+                <li><b>27 Kas · 10:30</b><span>İstanbul 14. İş Mahkemesi · Tanık duruşması</span></li>
+                <li><b>29 Kas · 17:00</b><span>İstinaf dilekçesi son günü · E.2024/118</span></li>
+                <li><b>01 Ara · 14:00</b><span>Arabuluculuk ilk oturum</span></li>
+              </ul>
+            </div>
+
+            <div data-acc-pane="profil" hidden>
+              <ul class="simple-rows">
+                <li><b>Kullanıcı</b><span>Av. Örnek Kullanıcı · İstanbul Barosu</span></li>
+                <li><b>E-posta</b><span>ornek@hukukburosu.test</span></li>
+                <li><b>Yenileme</b><span>Günlük limit her gün 00:00 (TSİ)</span></li>
+              </ul>
+            </div>
+
+            <div data-acc-pane="fatura" hidden>
+              <ul class="simple-rows" id="accInvoiceList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container editorial-metrics">
+        <div class="em-intro">
+          <p class="eyebrow">Panel Detayları</p>
+          <p class="em-statement">Her hesaplama güncel mevzuat dayanağıyla, her kota şeffaf biçimde sunulur.</p>
+        </div>
+
+        <div class="em-list em-list-reveal">
+          <div class="em-row reveal">
+            <strong>01</strong>
+            <div class="em-detail">
+              <span class="em-kicker">2026–2027 AAÜT</span>
+              <p>3 Kasım 2026 tarihli Resmî Gazete (s.33419) dilimleriyle nispi ve maktu vekâlet ücreti, kısmi kabul ve sulh/feragat (%50) hesabı.</p>
+            </div>
+          </div>
+          <div class="em-row reveal">
+            <strong>02</strong>
+            <div class="em-detail">
+              <span class="em-kicker">DÖNEMLİ FAİZ &amp; HARÇ</span>
+              <p>3095 s. Kanun ve 8485 s. CB Kararı uyarınca dönemlere ayrılmış kanuni faiz dökümü ile 492 s. Harçlar Kanunu peşin karar ve ilam harcı.</p>
+            </div>
+          </div>
+          <div class="em-row reveal">
+            <strong>03</strong>
+            <div class="em-detail">
+              <span class="em-kicker">ADLİ SÜRE &amp; TATİL</span>
+              <p>HMK m.104 kapsamında adli tatil, hafta sonu ve sabit resmî tatil uzamalarını otomatik hesaba katan istinaf, temyiz ve cevap süresi hesabı.</p>
+            </div>
+          </div>
+          <div class="em-row reveal">
+            <strong>04</strong>
+            <div class="em-detail">
+              <span class="em-kicker">AJANDA &amp; ÜYELİK</span>
+              <p>Yaklaşan duruşma ve süre hatırlatmaları, 30 günlük paket hakları, 00:00 (TSİ) günlük limit yenilemesi ve indirilebilir PDF fatura geçmişi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-label="Başlayın">
+      <div class="container closing-inner reveal">
+        <h2>Araştırmaya <span class="tone">bugün başlayın.</span></h2>
+        <p>Kredi kartı gerekmeden 30 gün ücretsiz: tüm modüllere ve hesap araçlarına erişim.</p>
+        <div class="closing-cta">
+          <a href="https://app.lexonomi.com/" class="btn btn-primary" data-app-link="kayit">30 gün ücretsiz deneyin</a>
+          <a href="../paketler/index.html" class="btn btn-ghost">Paketleri inceleyin</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="iletisim">
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="brand">
+          <svg class="brand-logo" viewBox="218 122 200 166" fill="none" aria-hidden="true">
+            <circle cx="238" cy="249" r="13" fill="currentColor"></circle>
+            <circle cx="398" cy="250" r="13" fill="currentColor"></circle>
+            <path d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257" stroke="currentColor" stroke-width="13" stroke-linecap="round"></path>
+          </svg>
+          <span class="brand-word">LEXONOMI</span>
+        </a>
+        <p class="muted">Hukuki araştırmada yeni bir standart.</p>
+        <p class="muted">© <span id="year"></span> İnter Mundos Yazılım ve Teknoloji A.Ş.</p>
+      </div>
+      <address class="footer-contact">
+        <p>Pamukkale Teknoloji Geliştirme Bölgesi, Kınıklı Mah. Hüseyin Yılmaz Cad. No: 67 İç Kapı No: 2, Pamukkale / Denizli</p>
+        <p>Tel: <a href="tel:+908508403243">0850 840 32 43</a> · <a href="mailto:info@lexonomi.com">info@lexonomi.com</a> · KEP: <a href="mailto:inter.mundos@hs01.kep.tr">inter.mundos@hs01.kep.tr</a> · MERSİS: 0478123270700001</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/lexonomi/" target="_blank" rel="noopener noreferrer" data-social="linkedin">LinkedIn</a>
+          <a href="https://www.instagram.com/lexonomi/" target="_blank" rel="noopener noreferrer" data-social="instagram">Instagram</a>
+          <a href="https://x.com/lexonomi" target="_blank" rel="noopener noreferrer" data-social="x">X</a>
+          <a href="https://www.youtube.com/@lexonomi" target="_blank" rel="noopener noreferrer" data-social="youtube">YouTube</a>
+        </div>
+      </address>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="../hero-media.js" defer></script>
+  <script src="../app.js" defer></script>
+</body>
+</html>
