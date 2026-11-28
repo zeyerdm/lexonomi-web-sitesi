@@ -48,11 +48,23 @@
         <svg viewBox="218 122 200 166" fill="none" aria-hidden="true"><circle cx="238" cy="249" r="13" fill="currentColor"/><circle cx="398" cy="250" r="13" fill="currentColor"/><path d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257" stroke="currentColor" stroke-width="13" stroke-linecap="round"/></svg>
         <span>LEXONOMI</span>
       </a>
-      <a class="zip" href="lexonomi-tasarimlar-28-kasim-2026.zip" download>Tümünü indir (ZIP) <small>33,5 MB</small></a>
+      <a class="zip" href="lexonomi-tasarimlar-28-kasim-2026.zip" download>Tümünü indir (ZIP) <small>46,7 MB</small></a>
     </header>
 
     <h1>Tasarım <b>çalışmaları</b></h1>
-    <p class="lead">Afiş serileri (A4, 300 dpi PNG ve baskıya hazır PDF) ile alternatif web sitesi tasarımı. Her dosyayı ayrı ayrı ya da tamamını tek ZIP olarak indirebilirsiniz.</p>
+    <p class="lead">Lexonomi afiş serileri: A4, 300 dpi PNG ve baskıya hazır PDF. Her afişi ayrı ayrı ya da tamamını tek ZIP olarak indirebilirsiniz.</p>
+
+    <section>
+      <h2>Afişler — Lexonomi nedir?</h2>
+      <p>Tanıtım serisi: Tokmak paneli · Modül listesi · Terazi — Türkçe ve İngilizce</p>
+      <div class="grid" id="g0"></div>
+    </section>
+
+    <section>
+      <h2>Afişler — Kurumsal renklerle örnek tasarımlar</h2>
+      <p>Gönderilen örnek afişlerin aynısı; Lexonomi logosu ve kurumsal renkleriyle — Türkçe ve İngilizce</p>
+      <div class="grid" id="g3"></div>
+    </section>
 
     <section>
       <h2>Afişler — Yaratıcı seri</h2>
@@ -64,15 +76,6 @@
       <h2>Afişler — Sade seri</h2>
       <p>Editoryal · Gece · Ürün — Türkçe ve İngilizce</p>
       <div class="grid" id="g2"></div>
-    </section>
-
-    <section>
-      <h2>Alternatif web sitesi</h2>
-      <p>Giriş videosu olmayan, "gece göğünden gün ışığına" konseptli alternatif ana sayfa tasarımı.</p>
-      <div class="site">
-        <a class="btn fill" href="alternatif-site/index.html" target="_blank" rel="noopener">Alternatif siteyi aç</a>
-        <a class="btn" href="../index.html" target="_blank" rel="noopener">Mevcut tasarımı aç</a>
-      </div>
     </section>
 
     <footer>© 2026 İnter Mundos Yazılım ve Teknoloji Anonim Şirketi · Lexonomi</footer>
@@ -88,6 +91,10 @@
         g.insertAdjacentHTML('beforeend', `<article class="card"><img src="afisler/${dir}/onizleme/${prefix}-${p}-${l}.jpg" alt="${label[p][l]} (${l.toUpperCase()})" loading="lazy"><div class="meta"><b>${label[p].tr} · ${l === 'tr' ? 'Türkçe' : 'İngilizce'}</b><div class="dl"><a href="${base}.png" download>PNG</a><a href="${base}.pdf" download>PDF</a></div></div></article>`);
       }));
     };
+    const names0 = { 1: { tr: 'Tokmak paneli', en: 'Gavel panel' }, 2: { tr: 'Modül listesi', en: 'Module list' }, 3: { tr: 'Terazi', en: 'Scales' } };
+    fill('g0', 'lexonomi-nedir', 'lexonomi-nedir-afis', names0);
+    const names3 = { 1: { tr: 'Dizüstü ve koyu bant', en: 'Laptop and dark band' }, 2: { tr: 'Önden dizüstü', en: 'Front laptop' }, 3: { tr: 'Uygulama ekranı', en: 'App screen' } };
+    fill('g3', 'kurumsal-renkli-ornekler', 'lexonomi-kurumsal-afis', names3);
     fill('g1', 'yaratici-seri', 'lexonomi-afis', names);
     fill('g2', 'sade-seri', 'lexonomi-sade-afis', names2);
   </script>
