@@ -85,7 +85,7 @@
       const g = document.getElementById(id);
       [1, 2, 3].forEach(p => ['tr', 'en'].forEach(l => {
         const base = `afisler/${dir}/${prefix}-${p}-${l}`;
-        g.insertAdjacentHTML('beforeend', `<article class="card"><img src="${base}.png" alt="${label[p][l]} (${l.toUpperCase()})" loading="lazy"><div class="meta"><b>${label[p].tr} · ${l === 'tr' ? 'Türkçe' : 'İngilizce'}</b><div class="dl"><a href="${base}.png" download>PNG</a><a href="${base}.pdf" download>PDF</a></div></div></article>`);
+        g.insertAdjacentHTML('beforeend', `<article class="card"><img src="afisler/${dir}/onizleme/${prefix}-${p}-${l}.jpg" alt="${label[p][l]} (${l.toUpperCase()})" loading="lazy"><div class="meta"><b>${label[p].tr} · ${l === 'tr' ? 'Türkçe' : 'İngilizce'}</b><div class="dl"><a href="${base}.png" download>PNG</a><a href="${base}.pdf" download>PDF</a></div></div></article>`);
       }));
     };
     fill('g1', 'yaratici-seri', 'lexonomi-afis', names);
