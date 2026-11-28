@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lexonomi Tasarımlar</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;700;800&display=swap" />
+  <style>
+    :root { --navy: #142D3A; --teal: #2B7A8A; --gold: #C4A879; --ivory: #F7F6F2; --line: rgba(20, 45, 58, .12); --muted: #5F6D75; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", system-ui, sans-serif; background: var(--ivory); color: var(--navy); line-height: 1.55; }
+    a { color: inherit; }
+    .wrap { width: min(1120px, 100% - 2rem); margin: 0 auto; }
+    header { padding: 2.2rem 0 1.4rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .logo { display: inline-flex; align-items: center; gap: 10px; color: var(--navy); text-decoration: none; }
+    .logo svg { width: 34px; height: 28px; }
+    .logo span { font-weight: 600; letter-spacing: .26em; font-size: 15px; }
+    .zip { display: inline-flex; align-items: center; gap: .6rem; padding: .85rem 1.3rem; border-radius: 999px; background: var(--navy); color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem; }
+    .zip small { font-weight: 400; opacity: .75; }
+    h1 { font-family: "Outfit", sans-serif; font-weight: 300; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.05; margin: 1.5rem 0 .6rem; }
+    h1 b { font-weight: 800; }
+    .lead { color: var(--muted); max-width: 640px; }
+    section { padding: 2.4rem 0; border-top: 1px solid var(--line); margin-top: 2rem; }
+    h2 { font-family: "Outfit", sans-serif; font-weight: 700; font-size: 1.5rem; }
+    h2 + p { color: var(--muted); font-size: .92rem; margin-top: .3rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1rem; margin-top: 1.4rem; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+    .card img { width: 100%; aspect-ratio: 210 / 297; object-fit: cover; display: block; background: #e9ecec; }
+    .card .meta { padding: .7rem .8rem .8rem; display: grid; gap: .45rem; }
+    .card b { font-size: .85rem; }
+    .dl { display: flex; gap: .4rem; }
+    .dl a { flex: 1; text-align: center; padding: .45rem; border-radius: 8px; border: 1px solid var(--line); font-size: .78rem; font-weight: 600; text-decoration: none; color: var(--teal); }
+    .dl a:hover { border-color: var(--teal); }
+    .site { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.2rem; }
+    .btn { display: inline-flex; padding: .7rem 1.2rem; border-radius: 999px; border: 1.5px solid var(--navy); text-decoration: none; font-weight: 600; font-size: .9rem; }
+    .btn.fill { background: var(--teal); border-color: var(--teal); color: #fff; }
+    footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .82rem; border-top: 1px solid var(--line); margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="../index.html" aria-label="Lexonomi">
+        <svg viewBox="218 122 200 166" fill="none" aria-hidden="true"><circle cx="238" cy="249" r="13" fill="currentColor"/><circle cx="398" cy="250" r="13" fill="currentColor"/><path d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257" stroke="currentColor" stroke-width="13" stroke-linecap="round"/></svg>
+        <span>LEXONOMI</span>
+      </a>
+      <a class="zip" href="lexonomi-tasarimlar-28-kasim-2026.zip" download>Tümünü indir (ZIP) <small>33,5 MB</small></a>
+    </header>
+
+    <h1>Tasarım <b>çalışmaları</b></h1>
+    <p class="lead">Afiş serileri (A4, 300 dpi PNG ve baskıya hazır PDF) ile alternatif web sitesi tasarımı. Her dosyayı ayrı ayrı ya da tamamını tek ZIP olarak indirebilirsiniz.</p>
+
+    <section>
+      <h2>Afişler — Yaratıcı seri</h2>
+      <p>Önce / Sonra · Kavisli fotoğraf · Yay üzerinde modüller — Türkçe ve İngilizce</p>
+      <div class="grid" id="g1"></div>
+    </section>
+
+    <section>
+      <h2>Afişler — Sade seri</h2>
+      <p>Editoryal · Gece · Ürün — Türkçe ve İngilizce</p>
+      <div class="grid" id="g2"></div>
+    </section>
+
+    <section>
+      <h2>Alternatif web sitesi</h2>
+      <p>Giriş videosu olmayan, "gece göğünden gün ışığına" konseptli alternatif ana sayfa tasarımı.</p>
+      <div class="site">
+        <a class="btn fill" href="alternatif-site/index.html" target="_blank" rel="noopener">Alternatif siteyi aç</a>
+        <a class="btn" href="../index.html" target="_blank" rel="noopener">Mevcut tasarımı aç</a>
+      </div>
+    </section>
+
+    <footer>© 2026 İnter Mundos Yazılım ve Teknoloji Anonim Şirketi · Lexonomi</footer>
+  </div>
+
+  <script>
+    const names = { 1: { tr: 'Önce / Sonra', en: 'Before / After' }, 2: { tr: 'Kavisli fotoğraf', en: 'Curved photo' }, 3: { tr: 'Yay üzerinde modüller', en: 'Modules on an arc' } };
+    const names2 = { 1: { tr: 'Editoryal', en: 'Editorial' }, 2: { tr: 'Gece', en: 'Night' }, 3: { tr: 'Ürün', en: 'Product' } };
+    const fill = (id, dir, prefix, label) => {
+      const g = document.getElementById(id);
+      [1, 2, 3].forEach(p => ['tr', 'en'].forEach(l => {
+        const base = `afisler/${dir}/${prefix}-${p}-${l}`;
+        g.insertAdjacentHTML('beforeend', `<article class="card"><img src="${base}.png" alt="${label[p][l]} (${l.toUpperCase()})" loading="lazy"><div class="meta"><b>${label[p].tr} · ${l === 'tr' ? 'Türkçe' : 'İngilizce'}</b><div class="dl"><a href="${base}.png" download>PNG</a><a href="${base}.pdf" download>PDF</a></div></div></article>`);
+      }));
+    };
+    fill('g1', 'yaratici-seri', 'lexonomi-afis', names);
+    fill('g2', 'sade-seri', 'lexonomi-sade-afis', names2);
+  </script>
+</body>
+</html>

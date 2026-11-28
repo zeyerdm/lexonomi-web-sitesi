@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="212 114 212 182" fill="none">
+  <!-- Lexonomi sembolü, kompakt (C) — kalın çizgi 16-32 px için. Kaynak: LexonomiMark.tsx KOMPAKT_PATH -->
+  <style>:root{color:#2e323d}@media (prefers-color-scheme:dark){:root{color:#d6d9de}}</style>
+  <circle cx="238" cy="249" r="17" fill="currentColor"/>
+  <circle cx="398" cy="250" r="17" fill="currentColor"/>
+  <path d="M262 245 C 270 241, 278 236, 285 233 C 320 216, 346 192, 353 162 C 357 143, 349 130, 338 137 C 322 148, 300 192, 293 226 C 288 252, 299 271, 323 275 C 342 279, 362 270, 378 257" stroke="currentColor" stroke-width="19" stroke-linecap="round"/>
+</svg>
